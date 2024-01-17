@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biblioteca de Livros</title>
+</head>
+<body>
+  <h1 style="text-align: center;">Biblioteca de Livros</h1>
+
+  <form action="/" method="post">
+    <label for="titulo">Pesquisar:</label>
+    <input type="text" id="titulo" name="titulo" >
+    <button type="submit">Pesquisar</button>
+  </form>
+
+  <br>
+
+  <form action="/adicionar" method="post">
+    <div>
+      <label for="titulo">Título</label>
+      <br>
+      <input type="text" id="titulo" name="titulo" required>
+    </div>
+
+    <div>
+      <label for="autor">Autor</label>
+      <br>
+      <input type="text" id="autor" name="autor" required>
+    </div>
+
+    <div>
+      <label for="anoPublicacao">Ano de Publicação</label>
+      <br>
+      <input type="number" id="anoPublicacao" name="anoPublicacao" required>
+    </div>
+
+    
+    <div>
+      <label for="capa">Capa do Livro</label>
+      <br>
+      <input type="file" id="capa" name="capa" accept="image/*">
+    </div>
+
+    <br>
+    <br>
+
+    <button type="submit">Adicionar Livro</button>
+  </form>
+
+  <!-- Formulário de adição de livros -->
+  <!-- (Restante do formulário aqui) -->
+
+  <!-- Lista de livros -->
+  <ul id="livrosList"></ul>
+
+  <!-- Scripts -->
+  
+  <script src="index.js"></script>
+  
+
+</body>
+</html>
+
